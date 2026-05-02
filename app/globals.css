@@ -1,0 +1,346 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+/* 恆美 Design System v3 - 霧畫感的永恆美 */
+:root {
+  /* Primary - 更柔和的溫暖色調 */
+  --color-primary-50: #FDFBF8;  /* 柔白 - 主背景 */
+  --color-primary-100: #F7F3ED; /* 輕霧米 - 次背景 */
+  --color-primary-500: #B8A090; /* 柔棕（更淡） - 標題、Logo */
+  --color-primary-700: #8A7668; /* 深棕（更柔） - CTA */
+  
+  /* Secondary - 更柔和的霧色系 */
+  --color-secondary-100: #F0EDE8; /* 柔霧白 - 分隔線 */
+  --color-secondary-300: #E4E8EC; /* 淡霧藍 - 霧面背景 */
+  --color-secondary-400: #C5CED6; /* 輕霧藍 - 信任元素 */
+  
+  /* Accent - 更柔和的暖色 */
+  --color-accent-100: #F8EDE6; /* 淡粉霧 - 漸層 */
+  --color-accent-300: #E8C8B8; /* 柔珊瑚 - Hover */
+  
+  /* Text Colors - 更柔和 */
+  --color-text-900: #5A5048; /* 暖灰褐 - 主文字 */
+  --color-text-700: #8A8278; /* 柔灰褐 - 次要文字 */
+  --color-text-400: #C0B8B0; /* 淺灰褐 - 提示文字 */
+  
+  /* Background */
+  --background: #FDFBF8;
+  --foreground: #5A5048;
+  
+  /* Card */
+  --card: rgba(255, 255, 255, 0.5);
+  --card-foreground: #3F362E;
+  
+  /* Borders */
+  --border: #E8E4DD;
+  --input: #FAF6F0;
+  --ring: #A88A75;
+  
+  --radius: 1.5rem;
+  
+  /* Gradients - 更柔和的漸層 */
+  --gradient-primary: linear-gradient(180deg, #FDFBF8 0%, #F7F3ED 100%);
+  --gradient-misty: linear-gradient(135deg, #FDFBF8 0%, #E4E8EC 50%, #F8EDE6 100%);
+  --gradient-soft-light: radial-gradient(circle at 20% 30%, rgba(248, 237, 230, 0.3) 0%, transparent 50%),
+                         radial-gradient(circle at 80% 70%, rgba(228, 232, 236, 0.3) 0%, transparent 50%);
+}
+
+@theme inline {
+  --font-sans: 'Noto Sans TC', 'Noto Sans SC', sans-serif;
+  --font-serif: 'Noto Serif TC', 'Noto Serif SC', serif;
+  --font-signature: 'Ma Shan Zheng', cursive;
+  
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  --color-primary: var(--color-primary-500);
+  --color-primary-foreground: #FAF6F0;
+  --color-secondary: var(--color-secondary-400);
+  --color-secondary-foreground: #FFFFFF;
+  --color-accent: var(--color-accent-300);
+  --color-accent-foreground: #FFFFFF;
+  --color-muted: var(--color-text-400);
+  --color-muted-foreground: var(--color-text-700);
+  
+  --radius-sm: calc(var(--radius) - 8px);
+  --radius-md: calc(var(--radius) - 4px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 8px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-text-900);
+    background: var(--gradient-primary);
+    line-height: 2;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.08em;
+    min-height: 100vh;
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-serif);
+    color: var(--color-primary-500);
+    line-height: 1.6;
+    font-weight: 200;
+    text-wrap: balance;
+    letter-spacing: 0.05em;
+  }
+  
+  h1 {
+    font-size: clamp(40px, 8vw, 64px);
+  }
+  
+  h2 {
+    font-size: clamp(32px, 5vw, 44px);
+    font-weight: 300;
+  }
+  
+  h3 {
+    font-size: clamp(24px, 4vw, 30px);
+    font-weight: 400;
+  }
+  
+  p {
+    text-wrap: pretty;
+    color: var(--color-text-900);
+  }
+  
+  /* 防止 iOS 自動縮放表單 */
+  input, textarea, select {
+    font-size: 20px;
+  }
+}
+
+@layer components {
+  /* 霧面玻璃效果 */
+  .frosted-glass {
+    background: rgba(253, 251, 248, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px rgba(184, 160, 144, 0.06);
+  }
+  
+  /* 背景光斑 */
+  .aurora-blur {
+    position: relative;
+  }
+  
+  .aurora-blur::before {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(248, 237, 230, 0.4) 0%, transparent 70%);
+    filter: blur(120px);
+    opacity: 0.5;
+    top: -200px;
+    left: -100px;
+    animation: float 20s ease-in-out infinite;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  .aurora-blur::after {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(228, 232, 236, 0.4) 0%, transparent 70%);
+    filter: blur(120px);
+    opacity: 0.4;
+    bottom: -150px;
+    right: -100px;
+    animation: float 25s ease-in-out infinite reverse;
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -30px) scale(1.05); }
+    66% { transform: translate(-20px, 20px) scale(0.95); }
+  }
+  
+  /* 主要按鈕 */
+  .btn-primary {
+    background: linear-gradient(135deg, #B8A090 0%, #8A7668 100%);
+    color: #FDFBF8;
+    border-radius: 9999px;
+    padding: 1.25rem 3rem;
+    min-height: 64px;
+    min-width: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(138, 118, 104, 0.12);
+    backdrop-filter: blur(8px);
+  }
+  
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(184, 160, 144, 0.25);
+  }
+  
+  .btn-primary:focus {
+    outline: 3px solid var(--color-primary-500);
+    outline-offset: 4px;
+  }
+  
+  /* 次要按鈕 - 霧面玻璃 */
+  .btn-secondary {
+    background: rgba(253, 251, 248, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(184, 160, 144, 0.25);
+    color: #8A7668;
+    border-radius: 9999px;
+    padding: 1.25rem 3rem;
+    min-height: 64px;
+    min-width: 44px;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    transition: all 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  .btn-secondary:hover {
+    background: rgba(168, 138, 117, 0.15);
+    border-color: var(--color-primary-500);
+  }
+  
+  .btn-secondary:focus {
+    outline: 3px solid var(--color-primary-500);
+    outline-offset: 4px;
+  }
+  
+  /* 卡片樣式 - 霧面玻璃版 */
+  .card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(184, 160, 144, 0.06);
+    padding: 3.5rem;
+  }
+  
+  /* 區塊間距 - 更通透 */
+  .section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+  
+  @media (min-width: 768px) {
+    .section {
+      padding-top: 9rem;
+      padding-bottom: 9rem;
+    }
+  }
+  
+  /* 淡入動畫 - 更柔和 */
+  .fade-in {
+    animation: fadeIn 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+    opacity: 0;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(4px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+  
+  /* 表單輸入框 - 霧面版 */
+  .form-input {
+    background: rgba(250, 246, 240, 0.6);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1.5px solid rgba(232, 228, 221, 0.8);
+    border-radius: 16px;
+    padding: 1rem 1.5rem;
+    min-height: 68px;
+    font-size: 20px;
+    width: 100%;
+    transition: all 300ms ease;
+    color: var(--color-text-900);
+  }
+  
+  .form-input:focus {
+    border-color: var(--color-primary-500);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 4px rgba(168, 138, 117, 0.1);
+    outline: none;
+  }
+  
+  .form-input::placeholder {
+    color: var(--color-text-400);
+  }
+  
+  /* 表單標籤 */
+  .form-label {
+    font-size: 20px;
+    color: var(--color-text-900);
+    margin-bottom: 0.75rem;
+    display: block;
+    font-weight: 400;
+  }
+  
+  /* 區塊漸層分隔 */
+  .section-divider {
+    height: 120px;
+    background: linear-gradient(180deg, transparent 0%, var(--color-primary-100) 50%, transparent 100%);
+  }
+  
+  /* 社群連結樣式 */
+  .social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 20px;
+    color: var(--color-secondary-400);
+    transition: color 200ms ease;
+    text-decoration: none;
+  }
+  
+  .social-link:hover {
+    color: var(--color-primary-500);
+  }
+  
+  .social-link svg {
+    width: 28px;
+    height: 28px;
+    stroke-width: 1.5;
+  }
+}
