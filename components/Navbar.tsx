@@ -38,7 +38,7 @@ export function Navbar() {
             href="/" 
             className="font-serif text-2xl tracking-[0.2em] text-[#A88A75] hover:text-[#6B5443] transition-colors duration-300 min-h-[44px] min-w-[44px] flex items-center"
           >
-            恆美
+            恆美芯
           </Link>
 
           {/* Desktop Navigation */}

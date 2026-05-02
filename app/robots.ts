@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/thank-you'],
     },
-    sitemap: 'https://hengmei.com.tw/sitemap.xml',
+    sitemap: 'https://henmeya.com/sitemap.xml',
   }
 }

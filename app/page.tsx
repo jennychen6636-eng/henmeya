@@ -20,7 +20,7 @@ export default function HomePage() {
               </p>
               
               <p className="text-xl md:text-[22px] text-[#8A8278] leading-[2] max-w-2xl">
-                恆美是專為熟齡族群設計的整合顧問服務。
+                恆美芯是專為熟齡族群設計的整合顧問服務。
                 <br />
                 肌膚保養 × 身心平衡 × 生活節奏，一次整理好。
               </p>
@@ -40,7 +40,7 @@ export default function HomePage() {
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%BD%A2%E8%B1%A1%E7%85%A7-UjID1eXdKKd9uoc8cnreE0pJk6timL.jpg"
-                  alt="恆美創辦人"
+                  alt="恆美芯創辦人"
                   width={480}
                   height={600}
                   className="object-cover"
@@ -89,7 +89,7 @@ export default function HomePage() {
         <div className="container mx-auto px-6 md:px-8 relative z-10">
           <div className="max-w-3xl mx-auto text-center mb-20">
             <p className="text-xl md:text-2xl text-[#7A6F62] leading-[2]">
-              恆美不是告訴你「要買什麼產品」，
+              恆美芯不是告訴你「要買什麼產品」，
               <br />
               也不是叫你「去運動、去放鬆」。
               <br />
@@ -151,7 +151,7 @@ export default function HomePage() {
         
         <div className="container mx-auto px-6 md:px-8 relative z-10">
           <p className="text-center text-xl md:text-2xl text-[#7A6F62] mb-16">
-            在你認識恆美之前，先認識我。
+            在你認識恆美芯之前，先認識我。
           </p>
           
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-12 md:gap-20 items-center max-w-5xl mx-auto">
@@ -159,7 +159,7 @@ export default function HomePage() {
               <div className="relative rounded-3xl overflow-hidden shadow-xl">
                 <Image
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%BD%A2%E8%B1%A1%E7%85%A7-UjID1eXdKKd9uoc8cnreE0pJk6timL.jpg"
-                  alt="恆美創辦人"
+                  alt="恆美芯創辦人"
                   width={400}
                   height={500}
                   className="object-cover w-full"
@@ -181,7 +181,7 @@ export default function HomePage() {
                   後來我開始把這三件事一起整理，
                   才發現它們其實是同一個問題的不同面向。
                   <br /><br />
-                  創立恆美，是因為我不想讓和我一樣的人，
+                  創立恆美芯，是因為我不想讓和我一樣的人，
                   再花那麼長的時間自己摸索。
                   <br /><br />
                   第一次和我諮詢，你不需要準備什麼，
@@ -294,7 +294,7 @@ export default function HomePage() {
             
             <div className="card space-y-8">
               <p className="text-xl text-[#3F362E] leading-[2]">
-                恆美的服務依照你的狀況與需求客製，
+                恆美芯的服務依照你的狀況與需求客製，
                 沒有固定的「套餐」，因為每個人的情況都不一樣。
                 <br /><br />
                 <span className="text-[#A88A75] font-medium">費用範圍：NT$1,000 起</span>，依服務項目與頻次而定。
@@ -328,7 +328,7 @@ export default function HomePage() {
             {[
               {
                 q: '第一次諮詢真的免費嗎？會被推銷嗎？',
-                a: '是的，第一次諮詢完全免費，60 分鐘。我不會推銷任何產品或課程。這段時間只是讓我們彼此認識，讓你知道恆美能不能幫到你。',
+                a: '是的，第一次諮詢完全免費，60 分鐘。我不會推銷任何產品或課程。這段時間只是讓我們彼此認識，讓你知道恆美芯能不能幫到你。',
               },
               {
                 q: '我不確定自己的問題是肌膚、睡眠還是壓力，可以諮詢嗎？',

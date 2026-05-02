@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Check, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: '預約已送出｜恆美',
+  title: '預約已送出｜恆美芯',
   description: '感謝您的預約，我們將盡快與您聯繫。',
 }
 

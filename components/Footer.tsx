@@ -24,7 +24,7 @@ export function Footer() {
               href="/" 
               className="font-serif text-2xl tracking-[0.2em] text-[#FAF6F0] hover:text-[#E8B5A6] transition-colors duration-200"
             >
-              恆美
+              恆美芯
             </Link>
             <p className="text-lg leading-relaxed text-[#B5AB9F]">
               肌膚・身心・生活節奏，一起整理。
@@ -67,7 +67,7 @@ export function Footer() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="font-serif text-xl text-[#FAF6F0] mb-6">繼續關注恆美</h3>
+            <h3 className="font-serif text-xl text-[#FAF6F0] mb-6">繼續關注恆美芯</h3>
             <ul className="space-y-4">
               <li>
                 <a 
@@ -100,7 +100,7 @@ export function Footer() {
         {/* Copyright */}
         <div className="border-t border-[#7A6F62]/30 mt-12 pt-8">
           <p className="text-center text-lg text-[#B5AB9F]">
-            &copy; {new Date().getFullYear()} 恆美｜保留所有權利
+            &copy; {new Date().getFullYear()} 恆美芯｜保留所有權利
           </p>
         </div>
       </div>

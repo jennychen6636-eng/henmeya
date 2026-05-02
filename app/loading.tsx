@@ -10,7 +10,7 @@ export default function Loading() {
         
         {/* Brand Name */}
         <p className="font-serif text-2xl text-[#8B6F5C] tracking-widest">
-          恆美
+          恆美芯
         </p>
       </div>
     </div>

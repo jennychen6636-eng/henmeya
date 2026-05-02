@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '隱私政策｜恆美',
-  description: '恆美隱私政策，說明個人資料蒐集、處理、利用方式及您的權利。',
+  title: '隱私政策｜恆美芯',
+  description: '恆美芯隱私政策，說明個人資料蒐集、處理、利用方式及您的權利。',
 }
 
 export default function PrivacyPage() {

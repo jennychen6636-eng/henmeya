@@ -19,7 +19,7 @@ export default function NotFound() {
         <p className="text-xl text-[#7A6F62] leading-[2] mb-10">
           可能是連結失效了，或者這個頁面還沒有準備好。
           <br />
-          不過你已經在這裡了，不如先看看恆美可以怎麼幫你？
+          不過你已經在這裡了，不如先看看恆美芯可以怎麼幫你？
         </p>
         
         {/* Buttons */}

@@ -30,25 +30,25 @@ const maShanZheng = Ma_Shan_Zheng({
 })
 
 export const metadata: Metadata = {
-  title: '恆美｜45歲以上肌膚保養・熟齡身心整合顧問｜線上預約',
-  description: '中年肌膚保養推薦、熟齡壓力釋放療癒、45歲以上整合顧問——恆美把肌膚、身心、生活節奏一起整理。第一次諮詢免費，立即線上預約。',
+  title: '恆美芯｜45歲以上肌膚保養・熟齡身心整合顧問｜線上預約',
+  description: '中年肌膚保養推薦、熟齡壓力釋放療癒、45歲以上整合顧問——恆美芯把肌膚、身心、生活節奏一起整理。第一次諮詢免費，立即線上預約。',
   keywords: ['中年肌膚保養推薦', '熟齡壓力釋放', '45歲以上整合顧問', '身心整合顧問', '熟齡保養'],
-  authors: [{ name: '恆美' }],
+  authors: [{ name: '恆美芯' }],
   openGraph: {
     title: '你不是變老了，你只是太久沒有人好好看你一眼。',
-    description: '恆美｜專為熟齡族群設計的整合顧問服務。立即預約免費諮詢。',
+    description: '恆美芯｜專為熟齡族群設計的整合顧問服務。立即預約免費諮詢。',
     images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
     locale: 'zh_TW',
     type: 'website',
-    siteName: '恆美',
+    siteName: '恆美芯',
   },
   twitter: { 
     card: 'summary_large_image',
-    title: '恆美｜45歲以上肌膚保養・熟齡身心整合顧問',
+    title: '恆美芯｜45歲以上肌膚保養・熟齡身心整合顧問',
     description: '你不是變老了，你只是太久沒有人好好看你一眼。',
   },
   alternates: { 
-    canonical: 'https://hengmei.com.tw' 
+    canonical: 'https://henmeya.com' 
   },
   robots: {
     index: true,

@@ -102,7 +102,7 @@ export function ContactForm() {
             <a href="/privacy" className="text-[#A8B8C8] hover:text-[#A88A75] underline underline-offset-2 mx-1 transition-colors duration-200">
               隱私政策
             </a>
-            ，同意恆美蒐集本表單資料用於回覆與服務聯繫。
+            ，同意恆美芯蒐集本表單資料用於回覆與服務聯繫。
           </label>
         </div>
 

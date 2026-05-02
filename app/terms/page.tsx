@@ -2,8 +2,8 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: '服務條款｜恆美',
-  description: '恆美整合顧問服務條款，說明服務內容、權利義務、保密條款等重要事項。',
+  title: '服務條款｜恆美芯',
+  description: '恆美芯整合顧問服務條款，說明服務內容、權利義務、保密條款等重要事項。',
 }
 
 export default function TermsPage() {
@@ -71,13 +71,13 @@ export default function TermsPage() {
               <h2 className="font-serif text-2xl text-[#A88A75] mb-6">第二條　費用與付款</h2>
               <div className="space-y-4 text-lg text-[#3F362E] leading-[2]">
                 <p>
-                  一、服務費用依恆美官方公告為準，範圍為新台幣 1,000 元至 5,000 元（依服務項目而定）。
+                  一、服務費用依恆美芯官方公告為準，範圍為新台幣 1,000 元至 5,000 元（依服務項目而定）。
                 </p>
                 <p>
                   二、付款須於預約確認後完成，服務方接收付款確認通知後，預約始生效。
                 </p>
                 <p>
-                  三、付款完成後，消費者即取得本服務之預約資格，費用處理由第三方金流服務商執行，恆美不儲存任何付款卡號資訊。
+                  三、付款完成後，消費者即取得本服務之預約資格，費用處理由第三方金流服務商執行，恆美芯不儲存任何付款卡號資訊。
                 </p>
               </div>
             </section>
@@ -104,7 +104,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-2xl text-[#A88A75] mb-6">第四條　保密義務</h2>
               <div className="space-y-4 text-lg text-[#3F362E] leading-[2]">
                 <p>
-                  一、恆美承諾對消費者於諮詢過程中所揭露之個人狀況、健康資訊及隱私內容，自服務結束日起保密三年。
+                  一、恆美芯承諾對消費者於諮詢過程中所揭露之個人狀況、健康資訊及隱私內容，自服務結束日起保密三年。
                 </p>
                 <p>
                   二、未經消費者書面同意，不得將上述資訊提供予任何第三方，但法律另有規定者不在此限。
@@ -116,7 +116,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-2xl text-[#A88A75] mb-6">第五條　智慧財產權</h2>
               <div className="space-y-4 text-lg text-[#3F362E] leading-[2]">
                 <p>
-                  本網站所有內容（包含文字、圖片、設計、諮詢建議文件）均為恆美所有或經合法授權使用，未經書面許可不得複製、轉載或商業利用。
+                  本網站所有內容（包含文字、圖片、設計、諮詢建議文件）均為恆美芯所有或經合法授權使用，未經書面許可不得複製、轉載或商業利用。
                 </p>
               </div>
             </section>
@@ -125,7 +125,7 @@ export default function TermsPage() {
               <h2 className="font-serif text-2xl text-[#A88A75] mb-6">第六條　條款變更</h2>
               <div className="space-y-4 text-lg text-[#3F362E] leading-[2]">
                 <p>
-                  恆美保留隨時修改本條款之權利，修改後將公告於本頁面並更新「最後更新日期」，繼續使用本服務即視為同意修改後之條款。
+                  恆美芯保留隨時修改本條款之權利，修改後將公告於本頁面並更新「最後更新日期」，繼續使用本服務即視為同意修改後之條款。
                 </p>
               </div>
             </section>
