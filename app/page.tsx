@@ -39,7 +39,7 @@ export default function HomePage() {
             <div className="relative hidden md:block">
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%BD%A2%E8%B1%A1%E7%85%A7-UjID1eXdKKd9uoc8cnreE0pJk6timL.jpg"
+                  src="/photo.jpg"
                   alt="恆美芯創辦人"
                   width={480}
                   height={600}
@@ -158,7 +158,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="relative rounded-3xl overflow-hidden shadow-xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/%E5%BD%A2%E8%B1%A1%E7%85%A7-UjID1eXdKKd9uoc8cnreE0pJk6timL.jpg"
+                  src="/photo.jpg"
                   alt="恆美芯創辦人"
                   width={400}
                   height={500}
